@@ -6,6 +6,8 @@ import Home from "./screens/Home";
 import Foods from "./screens/Foods";
 import Food from "./screens/Food";
 
+import "./globals.css";
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
