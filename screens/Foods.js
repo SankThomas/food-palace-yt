@@ -34,6 +34,10 @@ export default function Foods({ navigation, route }) {
     getMeals();
   }, []);
 
+  if (!meals) {
+    return <ActivityIndicator size="large" />;
+  }
+
   return (
     <SafeAreaView className="flex-1 bg-white">
       <Header title={route.params.strCategory} navigation={navigation} />
