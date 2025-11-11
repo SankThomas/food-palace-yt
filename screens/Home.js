@@ -55,6 +55,14 @@ export default function Home({ navigation }) {
     }
   };
 
+  if (!results) {
+    return (
+      <View className="flex items-center justify-center h-screen">
+        <ActivityIndicator size="large" />
+      </View>
+    );
+  }
+
   return (
     <SafeAreaView className="bg-white flex-1">
       <View className="bg-black p-4">
